@@ -9,7 +9,15 @@ const Loading = loadable(() => import("./loading"), {
 const SideBar = loadable(() => import("./sideBar"), {
     fallback: null
 });
-
+const MyPlaylists = loadable(() => import("./myPlaylists"), {
+    fallback: null
+});
+const Player = loadable(() => import("./player"), {
+    fallback: null
+});
+const Header = loadable(() => import("./header"), {
+    fallback: null
+});
 // *********************** Icon **********************
 const SpotifyIcon = loadable(() => import("./svgs/spotifyIcon"), {
     fallback: null
@@ -29,6 +37,12 @@ const AddPlaylistIcon = loadable(() => import("./svgs/addPlaylistIcon"), {
 const LikedPlaylistIcon = loadable(() => import("./svgs/likedPlaylistIcon"), {
     fallback: null
 });
+const InstallIcon = loadable(() => import("./svgs/installIcon"), {
+    fallback: null
+});
+const BackIcon = loadable(() => import("./svgs/backIcon"), {
+    fallback: null
+});
 
 export { 
     ErrorBoundary,
@@ -39,5 +53,10 @@ export {
     LibraryIcon,
     SearchIcon,
     AddPlaylistIcon,
-    LikedPlaylistIcon
+    LikedPlaylistIcon,
+    BackIcon,
+    MyPlaylists,
+    InstallIcon,
+    Player,
+    Header
 };
