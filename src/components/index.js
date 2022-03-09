@@ -18,6 +18,9 @@ const Player = loadable(() => import("./player"), {
 const Header = loadable(() => import("./header"), {
     fallback: null
 });
+const Playlists = loadable(() => import("./playlists"), {
+    fallback: null
+});
 // *********************** Icon **********************
 const SpotifyIcon = loadable(() => import("./svgs/spotifyIcon"), {
     fallback: null
@@ -58,5 +61,6 @@ export {
     MyPlaylists,
     InstallIcon,
     Player,
-    Header
+    Header,
+    Playlists
 };

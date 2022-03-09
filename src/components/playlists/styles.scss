@@ -1,0 +1,43 @@
+.playlists_container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    min-height: 300px;
+    min-width: 100%;
+    position: relative;
+    .playlists_infos{
+        align-items: center;
+        display: flex;
+        margin-bottom: 16px;
+        justify-content: space-between;
+        .see_all{
+            margin-left: 8px;
+            background: transparent;
+            color: #b3b3b3;
+            white-space: nowrap;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            font-family: spotify_font, Helvetica, Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .title{
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            letter-spacing: -0.04em;
+            text-transform: none;
+            box-sizing: border-box;
+            font-family: spotify_font-circular, Helvetica, Arial, sans-serif;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: 700;
+            color: var(#fff,#000000);
+        }
+    }
+}
