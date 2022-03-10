@@ -6,7 +6,10 @@ class Home extends Component {
         return (
             <div className='content_section'>
                 <div>
-                   <Playlists/> 
+                   <Playlists title="À ne pas manquer aujourd'hui !"/> 
+                </div>
+                <div>
+                   <Playlists title='Popular new releases'/> 
                 </div>
             </div>
         )
